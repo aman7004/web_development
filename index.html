@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <!-- Header -->
+  
   <header>
     <h1>🏰 Rajasthan <span>Diaries</span></h1>
     <nav>
@@ -22,7 +22,6 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero" id="home">
     <img src="images/hero.jpg" alt="Rajasthan Hawa Mahal at sunset">
     <div class="hero-text">
@@ -32,7 +31,6 @@
     </div>
   </section>
 
-  <!-- About Section -->
   <section class="section" id="about">
     <h2 class="section-title">About The Blog</h2>
     <div class="section-line"></div>
@@ -68,7 +66,6 @@
     </div>
   </section>
 
-  <!-- Destinations Table -->
   <section class="section" id="destinations">
     <h2 class="section-title">Top 3 Destinations</h2>
     <div class="section-line"></div>
@@ -106,7 +103,6 @@
     </div>
   </section>
 
-  <!-- Travel Quote -->
   <section class="section">
     <h2 class="section-title">Travel Quote</h2>
     <div class="section-line"></div>
@@ -119,7 +115,6 @@
     </div>
   </section>
 
-  <!-- Trip Video -->
   <section class="section" id="video">
     <h2 class="section-title">My Trip Video</h2>
     <div class="section-line"></div>
@@ -131,7 +126,6 @@
     </div>
   </section>
 
-  <!-- Background Music -->
   <section class="section">
     <div class="audio-box">
       <span>🎵</span>
@@ -143,7 +137,6 @@
     </div>
   </section>
 
-  <!-- Travel Form -->
   <section class="section" id="contact">
     <h2 class="section-title">Plan Your Trip</h2>
     <div class="section-line"></div>
@@ -162,14 +155,12 @@
       <div class="form-card">
         <form id="travelForm" novalidate>
 
-          <!-- Full Name -->
           <div class="form-group" id="nameGroup">
             <label for="fullName">Full Name</label>
             <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
             <p class="error-msg" id="nameError">Please enter your full name</p>
           </div>
 
-          <!-- Destination Interest -->
           <div class="form-group" id="destGroup">
             <label for="destination">Destination Interest</label>
             <select id="destination" name="destination">
@@ -184,7 +175,6 @@
             <p class="error-msg" id="destError">Please select a destination</p>
           </div>
 
-          <!-- Type of Traveler (Radio) -->
           <div class="form-group" id="travelerGroup">
             <label>Type of Traveler</label>
             <div class="option-group">
@@ -196,7 +186,6 @@
             <p class="error-msg" id="travelerError">Please select traveler type</p>
           </div>
 
-          <!-- Travel Interests (Checkbox) -->
           <div class="form-group">
             <label>Travel Interests</label>
             <div class="option-group">
@@ -207,14 +196,12 @@
             </div>
           </div>
 
-          <!-- Email -->
           <div class="form-group" id="emailGroup">
             <label for="email">Email ID</label>
             <input type="email" id="email" name="email" placeholder="your@email.com">
             <p class="error-msg" id="emailError">Please enter a valid email</p>
           </div>
 
-          <!-- Submit -->
           <button type="submit" class="submit-btn">Submit →</button>
           <div class="success-msg" id="successMsg">✅ Thank you! Your trip request has been submitted.</div>
         </form>
@@ -222,12 +209,10 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>© 2026 <span>Rajasthan Diaries</span>. All rights reserved. Made with ❤️</p>
   </footer>
 
-  <!-- Form Validation Script -->
   <script>
     var form = document.getElementById("travelForm");
     var successMsg = document.getElementById("successMsg");
@@ -235,33 +220,29 @@
     form.addEventListener("submit", function (e) {
       e.preventDefault();
 
-      // Reset errors
       clearErrors();
 
       var isValid = true;
 
-      // Full Name validation
       var name = document.getElementById("fullName").value.trim();
       if (name === "" || name.length < 3) {
         showError("nameGroup", "nameError", "Name must be at least 3 characters");
         isValid = false;
       }
 
-      // Destination validation
       var dest = document.getElementById("destination").value;
       if (dest === "" || dest === null) {
         showError("destGroup", "destError", "Please select a destination");
         isValid = false;
       }
 
-      // Traveler type validation
+     
       var travelerType = document.querySelector('input[name="travelerType"]:checked');
       if (!travelerType) {
         showError("travelerGroup", "travelerError", "Please select traveler type");
         isValid = false;
       }
 
-      // Email validation
       var email = document.getElementById("email").value.trim();
       var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
       if (email === "" || !emailPattern.test(email)) {
@@ -269,7 +250,6 @@
         isValid = false;
       }
 
-      // If all valid, show success
       if (isValid) {
         successMsg.style.display = "block";
         form.reset();
