@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My Rajasthan Travel Blog - Explore royal palaces, forts and culture of Rajasthan.">
+  <title>My Rajasthan Blog</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏰</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🏰 Rajasthan <span>Diaries</span></h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#video">Videos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <img src="images/hero.jpg" alt="Rajasthan Hawa Mahal at sunset">
+    <div class="hero-text">
+      <h2>Padharo Mhare Desh</h2>
+      <p>Explore the land of kings — majestic forts, golden deserts, and vibrant culture of Rajasthan.</p>
+      <a href="#destinations" class="hero-btn">Explore Rajasthan ↓</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <h2 class="section-title">About The Blog</h2>
+    <div class="section-line"></div>
+    <div class="about-grid">
+      <div class="about-img">
+        <img src="images/destinations.jpg" alt="Rajasthan landmarks collage">
+      </div>
+      <div class="about-text">
+        <p>
+          Welcome to <strong>Rajasthan Diaries</strong> — my personal travel journal
+          documenting adventures across the desert state. From the pink city of Jaipur
+          to the golden dunes of Jaisalmer, every fort whispers tales of valor.
+        </p>
+        <p>
+          Whether you love royal palaces, camel safaris, or colorful festivals,
+          you'll find travel tips and honest reviews to plan your perfect trip.
+        </p>
+        <div class="stats">
+          <div class="stat-box">
+            <h3>12+</h3>
+            <span>Cities</span>
+          </div>
+          <div class="stat-box">
+            <h3>30+</h3>
+            <span>Forts</span>
+          </div>
+          <div class="stat-box">
+            <h3>50+</h3>
+            <span>Stories</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destinations Table -->
+  <section class="section" id="destinations">
+    <h2 class="section-title">Top 3 Destinations</h2>
+    <div class="section-line"></div>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>City</th>
+            <th>Best Time to Visit</th>
+            <th>Famous For</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="rank gold">1</span></td>
+            <td>🏰 Jaipur (Pink City)</td>
+            <td>October – March</td>
+            <td>Hawa Mahal, Amber Fort, City Palace</td>
+          </tr>
+          <tr>
+            <td><span class="rank silver">2</span></td>
+            <td>🏜️ Jaisalmer (Golden City)</td>
+            <td>November – February</td>
+            <td>Jaisalmer Fort, Desert Safari, Havelis</td>
+          </tr>
+          <tr>
+            <td><span class="rank bronze">3</span></td>
+            <td>💧 Udaipur (City of Lakes)</td>
+            <td>September – March</td>
+            <td>Lake Palace, Pichola Lake, Temples</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Travel Quote -->
+  <section class="section">
+    <h2 class="section-title">Travel Quote</h2>
+    <div class="section-line"></div>
+    <div class="quote-box">
+      <blockquote>
+        <q>Rajasthan — where every stone tells a story of valor, every desert wind
+        carries a song of romance, and every sunset paints the forts in liquid gold.</q>
+        <cite>— A Traveler's Heart</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Trip Video -->
+  <section class="section" id="video">
+    <h2 class="section-title">My Trip Video</h2>
+    <div class="section-line"></div>
+    <div class="video-box">
+      <video controls poster="images/hero.jpg">
+        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </div>
+  </section>
+
+  <!-- Background Music -->
+  <section class="section">
+    <div class="audio-box">
+      <span>🎵</span>
+      <p>Background Music</p>
+      <audio loop autoplay muted controls>
+        <source src="audio/background-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </section>
+
+  <!-- Travel Form -->
+  <section class="section" id="contact">
+    <h2 class="section-title">Plan Your Trip</h2>
+    <div class="section-line"></div>
+    <div class="form-grid">
+      <div class="form-info">
+        <h3>Let's Plan Your Rajasthan Adventure</h3>
+        <p>Fill out the form and we'll help you plan the perfect royal trip.</p>
+        <ul>
+          <li>Personalized itineraries</li>
+          <li>Budget-friendly packages</li>
+          <li>Desert safaris & heritage walks</li>
+          <li>Local Rajasthani guides</li>
+        </ul>
+      </div>
+
+      <div class="form-card">
+        <form id="travelForm" novalidate>
+
+          <!-- Full Name -->
+          <div class="form-group" id="nameGroup">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+            <p class="error-msg" id="nameError">Please enter your full name</p>
+          </div>
+
+          <!-- Destination Interest -->
+          <div class="form-group" id="destGroup">
+            <label for="destination">Destination Interest</label>
+            <select id="destination" name="destination">
+              <option value="" disabled selected>Select a city</option>
+              <option value="jaipur">🏰 Jaipur – Pink City</option>
+              <option value="udaipur">💧 Udaipur – City of Lakes</option>
+              <option value="jaisalmer">🏜️ Jaisalmer – Golden City</option>
+              <option value="jodhpur">🔵 Jodhpur – Blue City</option>
+              <option value="pushkar">🙏 Pushkar – Holy City</option>
+              <option value="mount-abu">⛰️ Mount Abu – Hill Station</option>
+            </select>
+            <p class="error-msg" id="destError">Please select a destination</p>
+          </div>
+
+          <!-- Type of Traveler (Radio) -->
+          <div class="form-group" id="travelerGroup">
+            <label>Type of Traveler</label>
+            <div class="option-group">
+              <label><input type="radio" name="travelerType" value="solo"> Solo</label>
+              <label><input type="radio" name="travelerType" value="couple"> Couple</label>
+              <label><input type="radio" name="travelerType" value="family"> Family</label>
+              <label><input type="radio" name="travelerType" value="group"> Group</label>
+            </div>
+            <p class="error-msg" id="travelerError">Please select traveler type</p>
+          </div>
+
+          <!-- Travel Interests (Checkbox) -->
+          <div class="form-group">
+            <label>Travel Interests</label>
+            <div class="option-group">
+              <label><input type="checkbox" name="interests" value="adventure"> Adventure</label>
+              <label><input type="checkbox" name="interests" value="culture"> Culture</label>
+              <label><input type="checkbox" name="interests" value="food"> Food</label>
+              <label><input type="checkbox" name="interests" value="relaxation"> Relaxation</label>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group" id="emailGroup">
+            <label for="email">Email ID</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com">
+            <p class="error-msg" id="emailError">Please enter a valid email</p>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="submit-btn">Submit →</button>
+          <div class="success-msg" id="successMsg">✅ Thank you! Your trip request has been submitted.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 <span>Rajasthan Diaries</span>. All rights reserved. Made with ❤️</p>
+  </footer>
+
+  <!-- Form Validation Script -->
+  <script>
+    var form = document.getElementById("travelForm");
+    var successMsg = document.getElementById("successMsg");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Reset errors
+      clearErrors();
+
+      var isValid = true;
+
+      // Full Name validation
+      var name = document.getElementById("fullName").value.trim();
+      if (name === "" || name.length < 3) {
+        showError("nameGroup", "nameError", "Name must be at least 3 characters");
+        isValid = false;
+      }
+
+      // Destination validation
+      var dest = document.getElementById("destination").value;
+      if (dest === "" || dest === null) {
+        showError("destGroup", "destError", "Please select a destination");
+        isValid = false;
+      }
+
+      // Traveler type validation
+      var travelerType = document.querySelector('input[name="travelerType"]:checked');
+      if (!travelerType) {
+        showError("travelerGroup", "travelerError", "Please select traveler type");
+        isValid = false;
+      }
+
+      // Email validation
+      var email = document.getElementById("email").value.trim();
+      var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      if (email === "" || !emailPattern.test(email)) {
+        showError("emailGroup", "emailError", "Please enter a valid email address");
+        isValid = false;
+      }
+
+      // If all valid, show success
+      if (isValid) {
+        successMsg.style.display = "block";
+        form.reset();
+        setTimeout(function () {
+          successMsg.style.display = "none";
+        }, 3000);
+      }
+    });
+
+    function showError(groupId, errorId, message) {
+      document.getElementById(groupId).classList.add("error");
+      document.getElementById(errorId).textContent = message;
+    }
+
+    function clearErrors() {
+      var groups = document.querySelectorAll(".form-group");
+      for (var i = 0; i < groups.length; i++) {
+        groups[i].classList.remove("error");
+      }
+      successMsg.style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
